@@ -70,4 +70,11 @@ $(document).ready(function () {
 	// Highlight Carousel - Bootstrap4
 
 	$('.carousel').carousel()
+
+
+	// Comment section
+
+	$('#commentsToggle').click(function() {
+		$('#commentSection').toggleClass('hidden')
+	})
 });

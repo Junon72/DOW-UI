@@ -54,7 +54,8 @@ dowStyle
 
 ```
 
-
 [How TO - On Scroll Header](#https://www.w3schools.com/howto/howto_js_sticky_header.asp)
 
 [Slick](#https://kenwheeler.github.io/slick/)
+
+[Responsive blog post grid](#https://jsfiddle.net/bluegrounds/owjvhstq/4/)

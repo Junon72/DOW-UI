@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap-def.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=BioRhyme+Expanded:wght@800&display=swap"
+			rel="stylesheet">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Lato:wght@300;400;700&display=swap"
+			rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="assets/slick/slick-theme.css">
+		<link rel="stylesheet" href="assets/slick/slick.css">
+
+	</head>
+
+	<body>
+		<header>
+
+			<!-- Header -->
+
+			<div class="container top-container">
+				<div class="row d-flex w-100 justify-content-center no-gutters">
+					<div class="col text-center mt-2 mb-3 mt-lg-3 mb-lg-4 w-100">
+						<h1 class="logo-title">DOW</h1>
+						<p class="logo-sub">~ Dreams ~ On ~ Wheels ~</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Navigation | Sticky -->
+
+			<div class="nav-header" id="dowHeader">
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+						aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarColor02">
+						<ul class="navbar-nav justify-content-center flex-md-fill">
+							<li class="nav-item active">
+								<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="products.html">Sales </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="highlight.html">Highlight</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="blogposts.html">Blogs</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="login.html">Login</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="register.html">Register</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="cart.html">Cart</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<!-- / Navigation | Sticky -->
+		</header>
+
+		<!-- Main Content -->
+		<div class="container main-wrapper-index">
+			<!-- Highlight Header / Carousel -->
+			<section id="sales-carousel">
+				<div class="row w-100 justify-content-left no-gutters content-div mb-3 mt-5 d-flex">
+					<div class="col">
+						<h1 class="section-title">Blog</h1>
+					</div>
+					<div class="col carousel-control backHome clearfix ">
+						<a href="blogposts.html" class="btn btn-link back-button clearfix text-dark"
+							data-toggle="tooltip" data-placement="bottom" title="Take me back Home" data-delay="50"><i
+								class="align-bottom home-arrow fa fa-chevron-left"></i> Back to Blogs</a>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- /Highlight Headline | Carousel -->
+
+		<!-- Highlight Headline -->
+		<div class="container main-wrapper-index bg-light mb-5 pb-5">
+			<section id="blogPost">
+				<div class="row d-flex justify-content-center no-gutters">
+					<div class="col-lg-8 col-md-10 col-sx-12 hero-image d-block mx-auto pt-3">
+						<img class="hero-image img-fluid" src="assets/img/products/Facel.jpg" alt="Hero image">
+					</div>
+				</div>
+
+				<div class="row d-flex justify-content-center no-gutters">
+					<div class="text-center mt-lg-3 mb-lg-4 mb-md-4 w-100 pt-5">
+						<h1 class="article-title">{{ post.title }}</h1>
+					</div>
+				</div>
+				<div class="row mt-2 no-gutters justify-content-center">
+					<div class="col-lg-8 col-md-10 col-sx-12">
+						<div class="row mb-1 no-gutters">
+							<div class="col-md-2 col-sx-6 clearfix pl-3">
+								<img class="rounded-circle" width="50" height="50"
+									src="assets/img/products/profile2.jpg" alt="">
+							</div>
+							<div class="col-md-10 col-sx-6 clearfix pl-3">
+								<strong class="lato">{{ contributor.name }}</strong>
+								<p class="article-published"><i
+										class="fa fa-clock pr-2"></i>{{ original.date-published }}
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Blog post text area -->
+				<div class="row pb-4 mt-2 no-gutters justify-content-center highlightArticle w-100">
+					<div class="col-lg-8 col-md-10 col-sx-12">
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur porro
+							corporis,
+							omnis
+							eos
+							incidunt, natus quam praesentium, debitis voluptatibus quas voluptates!
+							Obcaecati
+							velit
+							inventore autem dolorem cumque asperiores corrupti impedit! Lorem ipsum dolor
+							sit
+							amet,
+							consectetur adipisicing elit. Fugit minus est, repudiandae corporis veritatis
+							illum
+							quisquam
+							facilis dolorum libero ipsa natus suscipit quos eveniet rerum ad doloremque
+							neque
+							quis rem?
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda optio
+							tempora
+							accusantium
+							adipisci, eveniet illo architecto ab, dolores, facere qui cum esse nostrum
+							laborum!
+							Aliquam
+							enim
+							ullam deserunt dolores odit!
+						</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quam! Fugiat
+							temporibus
+							tenetur
+							totam, magni repellendus facilis, mollitia accusamus iste praesentium suscipit
+							odio
+							quasi
+							officia perferendis enim deserunt deleniti cupiditate? Lorem ipsum dolor sit
+							amet
+							consectetur
+							adipisicing elit. Provident ad facere ea, harum, nostrum voluptates, quas illum
+							omnis quam
+							itaque a molestias in optio debitis obcaecati quis! Ab, sunt totam. Lorem ipsum
+							dolor sit,
+							amet
+							consectetur adipisicing elit. Harum eos veniam temporibus molestiae, deleniti
+							esse
+							architecto
+							ut, laboriosam sed in iure neque et. Laboriosam quos atque sed voluptates
+							officia
+							perspiciatis.
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus enim beatae
+							dicta
+							aut
+							inventore ullam nostrum. Consequatur perspiciatis accusantium possimus, velit
+							sapiente aut
+							sint
+							beatae molestias exercitationem quae, voluptatibus minus. Lorem ipsum dolor sit
+							amet
+							consectetur
+							adipisicing elit. Maiores dignissimos beatae praesentium temporibus molestiae
+							fugiat
+							autem
+							hic
+							id necessitatibus, aliquid assumenda tempore excepturi cumque commodi eligendi
+							nobis
+							in non
+							libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, hic.
+							Quae
+							repellendus id
+							dignissimos blanditiis corporis voluptatum illum nobis aliquid. Facilis voluptas
+							quasi enim
+							eaque illum quidem error quos aspernatur? Lorem ipsum dolor sit amet consectetur
+							adipisicing
+							elit. Est amet qui quae animi saepe laudantium quis assumenda illum
+							necessitatibus
+							repudiandae
+							ab ipsam, magnam velit veniam atque optio nisi aliquam reprehenderit!
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Highlight Specs -->
+			<div class="container">
+				<div class="row d-flex justify-content-center no-gutters">
+					<div class="col-lg-8 col-md-10 col-sx-12">
+						<button id="commentsToggle" type="button" class="btn btn-outline-dark btn-default btn-block">Comments &nbsp
+							{{ nr }}</button>
+					</div>
+				</div>
+
+				<!-- Comment form -->
+				<div id="commentSection" class="m-0 p-0 hidden">
+					<div class="row mt-4 no-gutters justify-content-center">
+						<div class="col-lg-8 col-md-10 col-sx-12">
+							<div class="row mb-1 no-gutters">
+								<div class="col-md-2 col-sx-6 clearfix pl-3">
+									<a href="#"><i class="fas fa-user-edit"></i></a>
+									<img class="rounded-circle" width="40" height="40"
+										src="assets/img/products/profile2.jpg" alt="">
+								</div>
+								<div class="col-md-10 col-sx-6 clearfix pl-3">
+									<strong class="lato">{{ contributor.name }}</strong>
+									<p class="article-published"><i
+											class="fa fa-clock pr-2"></i>{{ original.date-published }}
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-8 col-md-10 col-sx-12">
+							<div class="form-group">
+								<label for="exampleTextarea">Comment:</label>
+								<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+								<button class="btn btn-sm btn-dark float-right mt-1" type="submit">submit</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="row mb-1 no-gutters justify-content-center">
+						<div class="col-lg-8 col-md-10 col-sx-12 mt-2">
+							<div class="card border-light mb-3">
+								<div class="card-header p-0">
+									<div class="row mb-1 no-gutters">
+										<div class="col-md-2 col-sx-6 clearfix pl-3">
+											<img class="rounded-circle" width="40" height="40"
+												src="assets/img/products/profile2.jpg" alt="">
+										</div>
+										<div class="col-md-10 col-sx-6 clearfix pt-1 pl-3">
+											<strong class="lato">{{ user.name }}</strong>
+											<p class="article-published mb-0 fs"><i
+													class="fa fa-clock pr-2"></i>{{ comment.date-published }}
+											</p>
+										</div>
+									</div>
+									<div class="card-body bg-light pt-1">
+										<p class="card-text pt-0">Some quick example text to build on the card title and
+											make up
+											the
+											bulk of
+											the card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+											Necessitatibus, enim aliquid non mollitia cupiditate soluta libero labore
+											aspernatur nulla atque illum perferendis quas placeat. Reprehenderit odit
+											sapiente porro. Laboriosam, laborum. Lorem ipsum dolor sit amet, consectetur
+											adipisicing elit. Dolor atque molestias mollitia in aspernatur ut nemo,
+											necessitatibus delectus fugit animi commodi ducimus suscipit corporis
+											numquam eum sunt asperiores vel accusamus!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<!-- Foorter -->
+
+		<footer>
+			<div class="bg-dark p-4">
+				<div class="container">
+					<div class="row">
+						<div class="p-0 col-lg-4 col-md-6">
+							<div class="col align-self-center p-4">
+								<h4 class="text-white">DOW</h4>
+								<p class="mb-4 text-white">Kosterverloren 5 <br>Amstelland, AK 1234 <br> <abbr
+										title="Phone">P:</abbr> +31 (020) 123 45 678 </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bg-dark py-3">
+				<div class="container">
+					<div class="row d-flex justify-content-between">
+						<div class="col-lg-4 col-md-6">
+							<div class="row text-end mb-3">
+								<div class="col-md-2 col-3">
+									<a href="#" target="_blank"><i class="fa fa-facebook text-light fa-2x"></i></a>
+								</div>
+								<div class="col-md-2 col-3">
+									<a href="#" target="_blank"><i class="fa fa-twitter text-light fa-2x"></i></a>
+								</div>
+								<div class="col-md-2 col-3">
+									<a href="#" target="_blank"><i class="fa fa-instagram text-light fa-2x"></i></a>
+								</div>
+								<div class="col-md-2 col-3">
+									<a href="#" target="_blank"><i class="fa text-light fa-2x fa-pinterest-p"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<p class="text-secondary">Copyright - Lorem ipsum dolor sit amet</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+			integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+		</script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+		</script>
+		<script type="text/javascript" src="assets/slick/slick.js"></script>
+		<script type="text/javascript" src="assets/js/script.js"></script>
+
+	</body>
+
+</html>

@@ -266,7 +266,7 @@ a.nav-link:hover {
 
 .sales-card {
 	z-index: 0;
-	margin: 0 1rem; 
+	margin: 0 1rem;
 }
 
 .sales-card-no-border {
@@ -301,8 +301,9 @@ a.nav-link:hover {
 .old-price {
 	text-decoration-line: line-through;
 	-moz-text-decoration-line: line-through;
-	color: rgb(153, 156,159);
+	color: rgb(153, 156, 159);
 }
+
 .lato {
 	font-family: "Lato", serif;
 }
@@ -314,6 +315,11 @@ a.nav-link:hover {
 .medium {
 	font-weight: 400;
 }
+
+.fs {
+	font-size: .6rem;
+}
+
 .float-left {
 	margin-right: auto;
 }
@@ -326,7 +332,7 @@ a.nav-link:hover {
 	font-size: .8rem;
 	font-weight: 300;
 }
- 
+
 .about-original a {
 	font-size: .8rem;
 	font-family: "Lato", serif;
@@ -408,4 +414,33 @@ no-p {
 	font-family: "Lato", serif;
 	font-size: 1rem;
 	font-weight: 200;
+}
+
+/* ------------------------------------------------ Blogposts.html */
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 1em;
+	justify-content: center;
+	margin: 1em;
+}
+
+
+.card-title {
+	margin: 1em 0;
+	text-align: center;
+}
+
+/* ------------------------------------------------ Blog.html */
+
+.hero-image {
+	width: 100%;
+	height: auo;
+}
+
+/* Comments */
+
+.hidden {
+	display: none;
 }
