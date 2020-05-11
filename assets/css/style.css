@@ -266,6 +266,7 @@ a.nav-link:hover {
 
 .sales-card {
 	z-index: 0;
+	margin: 0 1rem; 
 }
 
 .sales-card-no-border {
@@ -297,7 +298,11 @@ a.nav-link:hover {
 	font-size: .8rem !important;
 }
 
-
+.old-price {
+	text-decoration-line: line-through;
+	-moz-text-decoration-line: line-through;
+	color: rgb(153, 156,159);
+}
 .lato {
 	font-family: "Lato", serif;
 }

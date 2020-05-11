@@ -107,9 +107,8 @@
 
 					<!-- Products column (row start) -->
 					<div class="col-md-7 mb-4 no-p">
-
 						<!-- Product1 -->
-						<div class="card sales-card pr-0 h-100">
+						<div class="card sales-card pr-0 mb-4">
 							<span class="badge badge-success promo-badge lato mb-2">Promotion</span>
 							<div class="row pr-0 no-gutters">
 								<div class="col-12 col-sm-6 col-md-12 col-lg-6 d-flex align-items-center no-p">
@@ -119,8 +118,8 @@
 									</div>
 								</div>
 								<div class="col-12 col-sm-6 col-md-12 col-lg-6 px-md-3 pl-sm-0 pl-lg-0">
-									<div class="card sales-card-no-border">
-										<div class="card-body pt-3 pb-2 px-2">
+									<div class="card sales-card-no-border h-100">
+										<div class="card-body pt-4 pb-2 px-2">
 											<h5 class="card-title mb-2 ml-2">
 												<strong class="lato">
 													{{ product.name }}
@@ -145,18 +144,14 @@
 														details</a>
 												</div>
 											</div>
-											<div class="row no-gutters clearfix">
-												<div class="col d-flex clearfix">
-													<span class="float-left my-auto pl-3">
-														<button
-															class="btn btn-link disabled btn-sm text-dark pl-0 add-to-cart"
-															data-toggle="tooltip" data-placement="bottom"
-															title="Amend quantity"
-															data-delay="50"><strong>Price</strong></button>
-													</span>
-													<div class="float-right my-auto"><i
-															class="fa fa-euro"></i><strong
-															class="lato price medium"> &nbsp {{ total }}</strong>
+											<div class="row no-gutters">
+												<div class="col d-flex pt-5">
+													<div class="float-left my-auto pl-3"><strong
+															class="lato price medium"> Price:</strong>
+													</div>
+													<div class="float-right my-auto pr-3"><i
+															class="fa fa-euro"></i><strong class="lato price medium">
+															&nbsp 84.50</strong>
 													</div>
 												</div>
 											</div>
@@ -165,8 +160,8 @@
 								</div>
 							</div>
 							<div class="card-footer p-2">
-								<div class="row mb-0 no-gutters">
-									<div class="col-md-6 d-flex clearfix pl-2">
+								<div class="row my-1 no-gutters">
+									<div class="col-md-6 d-flex clearfix mt-2 pl-2">
 										<span class="float-left my-auto">
 											<a href="#"
 												class="btn btn-dark btn-sm amend text-light pl-0 add-to-cart px-2"
@@ -194,14 +189,14 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-6 d-flex clearfix pr-4">
-										<span class="float-left my-auto pl-4">
+									<div class="col-md-6 order-first order-md-last d-flex clearfix pr-3">
+										<span class="float-left my-auto pl-3">
 											<button class="btn btn-link disabled btn-sm text-dark pl-0 add-to-cart"
 												data-toggle="tooltip" data-placement="bottom" title="Amend quantity"
 												data-delay="50"><strong>Total</strong></button>
 										</span>
-										<div class="float-right my-auto pl-4"><i class="fa fa-euro"></i><strong
-												class="lato price medium">  &nbsp{{ total }}</strong>
+										<div class="float-right my-auto"><i class="fa fa-euro"></i><strong
+												class="lato price medium"> &nbsp{{ total }}</strong>
 										</div>
 									</div>
 								</div>
@@ -232,61 +227,53 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<!-- /Products card1 -->
+						<!-- /Products card1 -->
 
-					<!-- Totals card -->
-					<div class="col-md-5 mb-4">
-						<div class="card sales-card ">
-							<div class="row">
-								<div class="col-12 col-sm-6 col-md-12 col-lg-6 d-flex align-items-center">
-									<div class="view overlay">
-										<span class="badge badge-success promo-badge lato mb-2">Promotion</span>
-										<img class="img-fluid" src="assets/img/products/Bentley.jpg" alt="Bentley">
-										<a>
-											<div class="mask rgba-white-slight"></div>
-										</a>
+						<!-- Products card2 -->
+						<div class="card sales-card pr-0">
+							<span class="badge badge-success promo-badge lato mb-2">Promotion</span>
+							<div class="row pr-0 no-gutters">
+								<div class="col-12 col-sm-6 col-md-12 col-lg-6 d-flex align-items-center no-p">
+									<div class="view h-100">
+										<img class="img-fluid card-img cart-product-image"
+											src="assets/img/products/Bentley.jpg" alt="Bentley">
 									</div>
 								</div>
 								<div class="col-12 col-sm-6 col-md-12 col-lg-6 px-md-3 pl-sm-0 pl-lg-0">
-									<div class="card sales-card-no-border z-depth-0">
-										<div class="card-body pt-3 pb-2 px-2">
+									<div class="card sales-card-no-border h-100">
+										<div class="card-body pt-4 pb-2 px-2">
 											<h5 class="card-title mb-2 ml-2">
 												<strong class="lato">
 													{{ product.name }}
 												</strong>
 											</h5>
-											<div class="row mb-2">
+											<div class="row mb-1 no-gutters">
 												<div class="col ml-2">
 													<span class="lato">{{ product.model }}</span>
 												</div>
 											</div>
-											<div class="row mb-0">
+											<div class="row mb-1 no-gutters">
 												<div class="col d-flex ml-2">
 													<span class="lato dimensions mr-2">W: {{p.w}}</span>
 													<span class="lato dimensions mr-2">L: {{p.l}}</span>
 													<span class="lato dimensions">H: {{p.h}}</span>
 												</div>
 											</div>
-											<div class="row mb-0">
+											<div class="row mb-0 no-gutters">
 												<div class="col d-flex about-original clearfix ml-2">
 													<a href="original.html" class="btn btn-link text-warning pl-0"
-														data-toggle="tooltip" data-placement="bottom"
-														title="About original" data-delay="50">Read about
-														original...</a>
+														data-toggle="modal" data-target="#productDetail">View
+														details</a>
 												</div>
 											</div>
-											<div class="card-footer p-2">
-												<div class="row mb-0 clearfix">
-													<div class="col d-flex clearfix">
-														<div class="float-left"><i class="fa fa-euro"></i><strong
-																class="lato price"> 85,50</strong></div>
-														<span class="float-right">
-															<a href="#"
-																class="btn btn-primary btn-sm text-light pl-0 add-to-cart px-2"
-																data-toggle="tooltip" data-placement="bottom"
-																title="Add to cart" data-delay="50">Add</a>
-														</span>
+											<div class="row no-gutters">
+												<div class="col d-flex pt-5">
+													<div class="float-left my-auto pl-3"><strong
+															class="lato price medium"> Price:</strong>
+													</div>
+													<div class="float-right my-auto pr-3"><i
+															class="fa fa-euro"></i>&nbsp <span class="old-price">{{ old }}</span><strong class="lato price medium">
+															84.50</strong>
 													</div>
 												</div>
 											</div>
@@ -294,10 +281,117 @@
 									</div>
 								</div>
 							</div>
+							<div class="card-footer p-2">
+								<div class="row my-1 no-gutters">
+									<div class="col-md-6 d-flex clearfix mt-2 pl-2">
+										<span class="float-left my-auto">
+											<a href="#"
+												class="btn btn-dark btn-sm amend text-light pl-0 add-to-cart px-2"
+												data-toggle="tooltip" data-placement="bottom" title="Amend quantity"
+												data-delay="50">Amend</a>
+										</span>
+										<div class="form-group float-right pr-2 my-auto">
+											<div class="input-group">
+												<select class="custom-select lato">
+													<option value="0">0</option>
+													<option selected="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+												<div class="input-group-append">
+													<span class="input-group-text">Qty</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 order-first order-md-last d-flex clearfix pr-3">
+										<span class="float-left my-auto pl-3">
+											<button class="btn btn-link disabled btn-sm text-dark pl-0 add-to-cart"
+												data-toggle="tooltip" data-placement="bottom" title="Amend quantity"
+												data-delay="50"><strong>Total</strong></button>
+										</span>
+										<div class="float-right my-auto"><i class="fa fa-euro"></i><strong
+												class="lato price medium"> &nbsp{{ total }}</strong>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Modal -->
+						<div class="modal fade" id="productDetail" tabindex="-1" role="dialog"
+							aria-labelledby="productDetailTitle" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-scrollable" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="productDetailTitle">Description</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<p class="lato">{{ produc.description }}Lorem ipsum dolor sit amet consectetur
+											adipisicing elit. Illum, voluptatem minus quia, architecto earum unde ipsa
+											facilis officiis ullam enim, a ea pariatur maxime placeat natus. Ab minus
+											quaerat vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+											impedit? Praesentium corrupti, minus, labore in ipsa sapiente nulla rerum
+											eius, ipsum amet veniam perferendis ipsam nisi magnam deserunt illo rem.</p>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<!-- /Products card1 (row end)-->
+
+					<!-- /Products card2 -->
+
+					<!-- Totals card -->
+					<div class="col-md-5 mb-4">
+						<div class="card sales-card">
+							<div class="card-body pt-3 pb-2">
+								<h5 class="card-title mb-3 mt-2">
+									<strong class="lato">
+										Your shopping cart
+									</strong>
+								</h5>
+								<div class="row no-gutters">
+									<div class="col">
+										<div class="display-block mb-2"><strong class="lato price medium">
+												Login to use our promotions!</strong>
+										</div>
+										<button href="#" type="button"
+											class="btn btn-outline-dark btn-sm btn-block">Login</button>
+									</div>
+								</div>
+								<div class="row no-gutters mt-4">
+									<div class="col d-flex">
+										<div class="float-left my-auto"><strong class="lato price">
+												Total</strong>
+										</div>
+										<div class="float-right my-auto pr-3"><i class="fa fa-euro"></i><strong
+												class="lato price medium">
+												&nbsp 84.50</strong>
+										</div>
+									</div>
+								</div>
+								<div class="row no-gutters mt-3 mb-2">
+									<div class="col">
+										<button href="#" type="button"
+											class="btn btn-dark btn-default btn-block">Checkout</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
+
+				<!-- /Products card1 (row end)-->
+
 			</section>
 		</div>
 
