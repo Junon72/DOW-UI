@@ -17,7 +17,7 @@ $(document).ready(function () {
 
 	// Tooltips
 	$(function () {
-		$('[data-toggle="tooltip"]').tooltip()
+		$('[data-tooltip="tooltip"]').tooltip()
 	});
 
 	//Sales Carousel - Slick
