@@ -3,6 +3,7 @@
 
 /* Titles / Subtitles / Headers / Paragraphs */
 
+
 h4,
 p {
 	font-family: "Lato", serif;
@@ -328,6 +329,18 @@ a.nav-link:hover {
 	margin-left: auto;
 }
 
+.autoRight {
+	margin-right: auto;
+}
+
+.autoLeft {
+	margin-left: auto;
+}
+
+.rightalign {
+	float: right;
+}
+
 .dimensions {
 	font-size: .8rem;
 	font-weight: 300;
@@ -450,4 +463,15 @@ no-p {
 	right: 1rem;
 	top: 5px;
 	color: rgb(52, 58, 64);
+}
+
+/* ------------------------------------------------ Profile.html */
+
+.profile-image {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+
 }

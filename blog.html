@@ -82,8 +82,8 @@
 
 		<!-- Main Content -->
 		<div class="container main-wrapper-index">
-			<!-- Highlight Header / Carousel -->
-			<section id="sales-carousel">
+			<!-- Blog Header -->
+			<section id="blog-header">
 				<div class="row w-100 justify-content-left no-gutters content-div mb-3 mt-5 d-flex">
 					<div class="col">
 						<h1 class="section-title">Blog</h1>
@@ -230,9 +230,6 @@
 										src="assets/img/products/profile2.jpg" alt="">
 								</div>
 								<div class="col-md-10 col-sx-6 clearfix pl-3">
-									<a id="editComment" data-toggle="modal" data-target="#editCommentModal" data-tooltip="tooltip" data-placement="bottom"
-										 title="Edit comment" data-delay="50"><i
-											class="fas fa-user-edit text-color-dark"></i></a></span>
 									<strong class="lato">{{ contributor.name }}</strong>
 									<p class="article-published"><i
 											class="fa fa-clock pr-2"></i>{{ original.date-published }}
@@ -249,6 +246,42 @@
 						</div>
 					</div>
 
+					<div class="row mb-1 no-gutters justify-content-center">
+						<div class="col-lg-8 col-md-10 col-sx-12 mt-2">
+							<div class="card border-light mb-3">
+								<div class="card-header p-0">
+									<div class="row mb-1 no-gutters">
+										<div class="col-md-2 col-sx-6 clearfix pl-3">
+											<img class="rounded-circle" width="40" height="40"
+												src="assets/img/products/profile2.jpg" alt="">
+										</div>
+										<div class="col-md-10 col-sx-6 clearfix pt-1 pl-3">
+											<strong class="lato">{{ user.name }}</strong>
+											<p class="article-published mb-0 fs"><i
+													class="fa fa-clock pr-2"></i>{{ comment.date-published }}
+											</p>
+											<a id="editComment" data-toggle="modal" data-target="#editCommentModal"
+												data-tooltip="tooltip" data-placement="bottom" title="Edit comment"
+												data-delay="50"><i class="fas fa-user-edit text-color-dark"></i></a>
+										</div>
+									</div>
+									<div class="card-body bg-light pt-1">
+										<p class="card-text pt-0">Some quick example text to build on the card title and
+											make up
+											the
+											bulk of
+											the card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+											Necessitatibus, enim aliquid non mollitia cupiditate soluta libero labore
+											aspernatur nulla atque illum perferendis quas placeat. Reprehenderit odit
+											sapiente porro. Laboriosam, laborum. Lorem ipsum dolor sit amet, consectetur
+											adipisicing elit. Dolor atque molestias mollitia in aspernatur ut nemo,
+											necessitatibus delectus fugit animi commodi ducimus suscipit corporis
+											numquam eum sunt asperiores vel accusamus!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 					<!-- Edit modal -->
 					<div class="modal" id="editCommentModal" tabindex="-1" role="dialog">
 						<div class="modal-dialog" role="document">
@@ -264,45 +297,12 @@
 										<label for="editCommentForm">Comment:</label>
 										<textarea class="form-control" id="editCommentForm" rows="3"></textarea>
 										<div class="modal-footer pb-0">
-											<button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-											<button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Delete</button>
+											<button type="button" class="btn btn-secondary btn-sm"
+												data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-danger btn-sm"
+												data-dismiss="modal">Delete</button>
 											<button type="button" class="btn btn-success btn-sm">Save changes</button>
 										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="row mb-1 no-gutters justify-content-center">
-						<div class="col-lg-8 col-md-10 col-sx-12 mt-2">
-							<div class="card border-light mb-3">
-								<div class="card-header p-0">
-									<div class="row mb-1 no-gutters">
-										<div class="col-md-2 col-sx-6 clearfix pl-3">
-											<img class="rounded-circle" width="40" height="40"
-												src="assets/img/products/profile2.jpg" alt="">
-										</div>
-										<div class="col-md-10 col-sx-6 clearfix pt-1 pl-3">
-											<strong class="lato">{{ user.name }}</strong>
-											<p class="article-published mb-0 fs"><i
-													class="fa fa-clock pr-2"></i>{{ comment.date-published }}
-											</p>
-										</div>
-									</div>
-									<div class="card-body bg-light pt-1">
-										<p class="card-text pt-0">Some quick example text to build on the card title and
-											make up
-											the
-											bulk of
-											the card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-											Necessitatibus, enim aliquid non mollitia cupiditate soluta libero labore
-											aspernatur nulla atque illum perferendis quas placeat. Reprehenderit odit
-											sapiente porro. Laboriosam, laborum. Lorem ipsum dolor sit amet, consectetur
-											adipisicing elit. Dolor atque molestias mollitia in aspernatur ut nemo,
-											necessitatibus delectus fugit animi commodi ducimus suscipit corporis
-											numquam eum sunt asperiores vel accusamus!</p>
 									</div>
 								</div>
 							</div>

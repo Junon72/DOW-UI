@@ -17,10 +17,11 @@
 			href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Lato:wght@300;400;700&display=swap"
 			rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/style.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
 
 		<link rel="stylesheet" href="assets/slick/slick-theme.css">
 		<link rel="stylesheet" href="assets/slick/slick.css">
@@ -92,18 +93,18 @@
 		<!-- Main Content -->
 
 		<!-- Sales Carousel -->
-		<section id="sales-carousel">
-			<div class="container p-0">
-				<div class="row w-100 justify-content-left no-gutters content-div mb-3 mt-5 d-flex">
-					<div class="col">
-						<h1 class="section-title">Sales</h1>
-					</div>
-					<div class="col carousel-control clearfix">
-						<i class="align-bottom arrow fa fa-chevron-left prev"></i>
-						<i class="align-bottom arrow fa fa-chevron-right next"></i>
-					</div>
+		<div class="container p-0">
+			<div class="row w-100 justify-content-left no-gutters content-div mb-3 mt-5 d-flex">
+				<div class="col">
+					<h1 class="section-title">Sales</h1>
+				</div>
+				<div class="col carousel-control clearfix">
+					<i class="align-bottom arrow fa fa-chevron-left prev"></i>
+					<i class="align-bottom arrow fa fa-chevron-right next"></i>
 				</div>
 			</div>
+		</div>
+		<section id="sales-carousel">
 			<div class="container-fluid main-wrapper-index">
 				<div class="responsive slider salesSlider clearfix"
 					data-slick="{'slidesToShow': 4, 'slidesToScroll': 4}">
@@ -186,7 +187,7 @@
 			<div class="container">
 				<div class="row w-100 justify-content-left no-gutters content-div mb-3 mt-5 d-flex">
 
-						<h1 class="section-title">About</h1>
+					<h1 class="section-title">About</h1>
 
 				</div>
 				<div class="row">
@@ -229,19 +230,29 @@
 					</div>
 					<div class="row d-flex justify-content-center">
 						<div class="col-lg-3 col-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle"
-								src="assets/img/products/profile1.png" width="150" alt="Card image cap">
+								src="assets/img/products/profile1.png" width="120" height="120" alt="Card image cap">
 							<h4> <b>B. W. Smith</b> </h4>
 							<p class="mb-0">CEO - Sales</p>
 						</div>
 						<div class="col-lg-3 col-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle"
-								src="assets/img/products/profile3.jpg" width="150">
+								src="assets/img/products/profile3.jpg" width="120" height="120">
 							<h4> <b>J. G. Wolf</b> </h4>
-							<p class="mb-0">Co-founder - Main contributo</p>
+							<p class="mb-0">Co-founder - Main contributor</p>
 						</div>
 						<div class="col-lg-3 col-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle"
-								src="assets/img/products/profile2.jpg" width="150">
+								src="assets/img/products/profile2.jpg" width="120" height="120">
 							<h4> <b>A. Gang</b> </h4>
 							<p class="mb-0">Contributor</p>
+						</div>
+						<div class="col-lg-3 col-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle"
+								src="assets/img/products/profile1.png" width="120" height="120" alt="Card image cap">
+							<h4> <b>B. W. Smith</b> </h4>
+							<p class="mb-0">CEO - Sales</p>
+						</div>
+						<div class="col-lg-3 col-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle"
+								src="assets/img/products/profile1.png" width="120" height="120" alt="Card image cap">
+							<h4> <b>B. W. Smith</b> </h4>
+							<p class="mb-0">CEO - Sales</p>
 						</div>
 					</div>
 				</div>
@@ -296,8 +307,6 @@
 
 
 		<!-- /Footer -->
-
-
 
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
