@@ -449,7 +449,7 @@ no-p {
 
 .hero-image {
 	width: 100%;
-	height: auo;
+	height: auto;
 }
 
 /* Comments */
@@ -474,4 +474,25 @@ no-p {
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 
+}
+
+/* ---------- 404 -------------*/
+
+.page-wrap {
+	min-height: 100vh;
+}
+
+.error-code {
+	color: #ffc107;
+	font-size: 4em;
+	font-weight: 900;
+	font-family: 'Lato'
+}
+
+.error-link {
+	text-decoration: none;
+}
+
+.error-page h1, h3{
+	color: #ffffff;
 }
