@@ -1,61 +1,7 @@
+# Milestone4 - dowStyle UI
 
-```
-dowStyle
-├─ assets
-│  ├─ css
-│  │  ├─ bootstrap-def.css
-│  │  ├─ bootstrap.min.css
-│  │  └─ style.css
-│  └─ js
-│     └─ script.js
-├─ blogposts.html
-├─ cart.html
-├─ checkout.html
-├─ highlight.html
-├─ indx.html
-├─ login.html
-├─ password_reset_complete.html
-├─ password_reset_confirm.html
-├─ password_reset_done.html
-├─ password_reset_email.html
-├─ password_reset_form.html
-├─ postdetail.html
-├─ products.html
-├─ profile.html
-└─ register.html
+dowStyle repo has been used as an experimentation platform when developing the DOW website static elements and UI.
 
-```
+This does not representation the complete and final look of the site.
 
-```
-dowStyle
-├─ README.md
-├─ assets
-│  ├─ css
-│  │  ├─ bootstrap-def.css
-│  │  ├─ bootstrap.min.css
-│  │  └─ style.css
-│  └─ js
-│     └─ script.js
-├─ blogposts.html
-├─ cart.html
-├─ checkout.html
-├─ highlight.html
-├─ indx.html
-├─ login.html
-├─ password_reset_complete.html
-├─ password_reset_confirm.html
-├─ password_reset_done.html
-├─ password_reset_email.html
-├─ password_reset_form.html
-├─ postdetail.html
-├─ products.html
-├─ profile.html
-└─ register.html
-
-```
-
-[How TO - On Scroll Header](#https://www.w3schools.com/howto/howto_js_sticky_header.asp)
-
-[Slick](#https://kenwheeler.github.io/slick/)
-
-[Responsive blog post grid](#https://jsfiddle.net/bluegrounds/owjvhstq/4/)
+Separating the development process between UI and building the functionality and UX of the website helped at beginning to to focus the workflow.
