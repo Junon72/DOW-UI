@@ -14,7 +14,7 @@ The actual project GitHub repo and deployed website
 
 Deployed version of the project
 
-Heroku App: [DreamsOnWheels](https://dreamsonwheels.herokuapp.com/)
+Heroku App: [DreamsOnWheels](https://dreamsonwheels.herokuapp.com)
 
 GitHub repo of the project
 
