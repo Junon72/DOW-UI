@@ -167,6 +167,16 @@ a.nav-link:hover {
 	margin-bottom: calc(100vw/ -6);
 }
 
+.call-to-action {
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transition-timing-function: ease-in-out;
+	z-index: 2;
+	/* margin-bottom: calc(100vw/ -6); */
+}
 /* Main container */
 
 .main-wrapper-index {
@@ -178,35 +188,33 @@ a.nav-link:hover {
 
 .salesSlider {
 	min-width: 100vw;
-	height: 30vh;
+	height: auto;
 	overflow: hidden;
-	border: red;
 	clear: left;
 	display: flex;
 	margin-left: -15px;
-	margin-right: -15px;
 	padding: 0 !important;
 }
 
 .sliderItem {
+	overflow: hidden;
 	display: flex;
 	position: relative;
 	overflow: hidden;
-	width: auto;
-	height: 30vh;
+	width: 100%;
+	height: auto;
 	margin: auto;
-	padding-left: -15px;
 	align-items: center;
 	justify-content: center;
 }
 
 .sliderItem .slider-image {
 	position: relative;
-	padding-right: 1em;
-	height: 30vh;
+	height: 100%;
 	width: 100%;
 	object-fit: cover;
-}
+	margin-left: 3px;
+	}
 
 .sliderItem .infoHidden {
 	position: absolute;
@@ -392,13 +400,43 @@ no-p {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: calc(100vw/ 2.5);
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1400px) {
+	.highlightItem {
+		height: calc(100vw/ 3);
+	}
+}
+
+@media screen and (max-width: 1399px) and (min-width: 992px) {
+	.highlightItem {
+		height: calc(100vw/ 2.6);
+	}
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+	.highlightItem {
+		height: calc(100vw/ 2.4);
+	}
+}
+
+@media screen and (max-width: 767px) and (min-width: 575px) {
+	.highlightItem {
+		height: calc(100vw/ 2.2);
+	}
+}
+
+@media screen and (max-width: 574px) and (min-width: 315px) {
+	.highlightItem {
+		height: calc(100vw/ 1.8);
+	}
 }
 
 .highlight-image {
 	content: "";
 	display: block;
-	padding-bottom: 56.25%;
+	/* padding-bottom: 56.25%; */
 }
 
 .highlightSpec {
